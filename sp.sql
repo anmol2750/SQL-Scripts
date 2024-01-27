@@ -1,0 +1,19 @@
+DELIMITER //
+CREATE PROCEDURE GetCity()
+BEGIN
+SELECT *
+FROM  vendor_city;
+END //
+DELIMITER ;
+
+Call GetCity();
+
+DELIMITER //
+CREATE PROCEDURE GetState()
+BEGIN
+SELECT *
+FROM  vendor_state;
+END //
+DELIMITER ;
+
+Call GetState();
